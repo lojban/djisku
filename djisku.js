@@ -72,7 +72,7 @@ client.addListener('message', function(from, to, text, message) {
     var relayMatch = text.match(/^<(.*?)>: (.*)/);
     if (relayMatch) {
         from = relayMatch[1];
-        message = relayMatch[2];
+        text = relayMatch[2];
     }
     getuser.get(namenorm(from), function(err, row) {
         if (row || !(from in noobs)) {
