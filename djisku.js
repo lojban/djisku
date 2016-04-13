@@ -69,6 +69,10 @@ client.addListener('names', function (chan, newnames) {
 });
 
 client.addListener('message', function(from, to, text, message) {
+  if (message.search(/^<(.*?)>: /)===0){
+  	from=message.match(/^<(.*?)>: /)[1];
+  	message=(message.match(/^<.*?>: (.*)/)[1]||'');
+  }
     getuser.get(namenorm(from), function(err, row) {
         if (row || !(from in noobs)) {
             console.log("cusku da fa noi slabu vau fa la'o " + quote(from) + " fe no'u zoi " + quote(text));
