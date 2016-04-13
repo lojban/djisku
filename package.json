@@ -1,0 +1,12 @@
+{
+  "name": "la djisku",
+  "version": "0.0.2",
+  "author": {"name": "la cirko, adapted by la gleki"},
+  "description": "a bot welcoming new Lojbanists in text chats",
+  "dependencies": {
+    "irc": "^0.5.0",
+    "fs": "^0.8.2",
+    "path": "^0.12.7",
+    "sqlite3": "^3.1.3"
+  }
+}
