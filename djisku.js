@@ -104,7 +104,7 @@ client.addListener('message', function(from, to, text, message) {
                     console.log("rinsa promote la'o " + quote(from));
                     promote(from);
                     if (from in names) {
-                        client.say(to, from + ": coi cnino! It appears that noone has spoken to you in <ROBOTIC VOICE> ONE </ROBOTIC VOICE> minute(s)!!! I just wanted to let you know, this is a slow moving channel. Stay around for half an hour and someone is likely to notice and come around.");
+                        client.say(to, from + ": coi cnino! It appears that no one has spoken to you in <ROBOTIC VOICE> ONE </ROBOTIC VOICE> minute(s)!!! I just wanted to let you know, this is a slow moving channel. Stay around for half an hour and someone is likely to notice and come around.");
                         console.log("from in names");
                     }
                 }, limit_greet);
